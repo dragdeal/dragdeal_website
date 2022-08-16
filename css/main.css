@@ -574,7 +574,7 @@ li.slick-active button{
 }
 
 .informations{
-    height: 80%;
+    height: 50%;
     width: 30%;
     display: grid;
     text-align: left;
@@ -594,7 +594,7 @@ li.slick-active button{
 }
 
 .contact{
-    margin-left: 15vh;
+    margin-left: 0vh;
     width: clamp(500px, 50%, 700px);
     height: 450px;
     background: url(../img/Box_smooth.png);
