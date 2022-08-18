@@ -2,6 +2,12 @@
 <head>
     <link rel="icon" href="./img/icon.png">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<script type="text/javascript" src="js/instafeed.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+    
     <title> DragDeal </title>
 </head>
 
@@ -120,6 +126,46 @@
         </div>
     </div>
     <!--Bottom-->
+    
+    <div id="instafeed" class="owl-carousel owl-theme owl-loaded owl-drag"></div>
+
+	<script type="text/javascript">
+		var feed = new Instafeed({
+			accessToken: '',
+			limit: 4,
+			template:'<div class="item"><a href="{{link}}" target="_blank"><img title="{{caption}}" src="{{image}}" /></a></div>',
+
+			after: function(){
+
+				$('.owl-carousel').owlCarousel({
+					loop:true,
+					margin:10,
+					nav:false,
+                    autoWidth: true,
+					responsiveClass:true,
+                    dots: false,
+					responsive:{
+						0:{
+							items:1
+							
+						},
+						600:{
+							items:3
+							
+						},
+						1000:{
+							items:4,							
+						
+						}
+					}
+				});
+			}
+		});
+
+
+		feed.run();
+
+	</script>
    
     <script src="./js/mobile-navbar.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
