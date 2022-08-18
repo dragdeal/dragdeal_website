@@ -271,10 +271,6 @@ nav{
     display: flex;
 }
 
-.owl-carousel .owl-item img{
-    height: 800px;
-  }
-
 /*ABOUT */
 .about{
     width: 100%;
