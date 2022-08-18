@@ -4,14 +4,7 @@ window.addEventListener("load", function(){
     loader.style.display = "none";
 })
 
-//Slider
-$('.slider-principal').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    autoplay: true,
-    autoplaySpeed: 5000,
-  });
+
 
   //Scroll
   var lastScrollTop = 0;
