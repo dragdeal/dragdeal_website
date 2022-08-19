@@ -359,7 +359,7 @@ nav{
 }
 
 .progressbar li{
-    font-size: 25px;
+    font-size: 30px;
     font-family: cursive;
     text-align: center; 
     color: white;
@@ -404,7 +404,7 @@ nav{
     height: 20px;
     background-color: #F440DE;
     z-index: -1;
-    top: 75%;
+    top: 50%;
     left: -50%;
 }
 
