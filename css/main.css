@@ -474,13 +474,14 @@ nav{
 
 .informations{
     height: 50%;
-    width: 30%;
+    width: 33%;
     display: grid;
     text-align: left;
     align-items: center;
 }
 
 .role{
+    width: 85%;
     display: inline-block;
     align-items: center;
     justify-content: center;
